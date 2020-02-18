@@ -1,3 +1,3 @@
 # Autômatos
 
-Implementação de autômato finito determinístico para a disciplina de linguagens formais e autômatos.
+Implementação de autômato finito deterministico para a disciplina de linguagens formais e autômatos.
