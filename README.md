@@ -21,7 +21,8 @@ Implementação de autômato finito deterministico para a disciplina de linguage
   #### Definindo o estado final do autômato:
       automato.definirEstadoFinal(estado).
     
-      Antes de realizar a definição, é verificado se o valor passado como argumento esta dentro do intervalo [0, quantidade de estados).
+      Antes de realizar a definição, é verificado se o valor passado como argumento esta dentro do 
+      intervalo [0, quantidade de estados).
       ~~~C++
       automato.definirEstadoFinal(2);
       ~~~
