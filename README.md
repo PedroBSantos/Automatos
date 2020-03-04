@@ -28,7 +28,7 @@
    ~~~
    
   # Exemplo completo:
-    Automato que aceita palavras que começam apenas com ab sobre o alfabeto A = {a, b}.
+   Automato que aceita palavras que começam apenas com ab sobre o alfabeto A = {a, b}.
     
     ~~~C++
     Automato automato1(4, std::vector<char>{'a', 'b'});
