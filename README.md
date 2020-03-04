@@ -46,4 +46,4 @@
     std::cout << automato1.lerPalavra(palavra) << std::endl;
     palavra = "babababababababa";
     std::cout << automato1.lerPalavra(palavra) << std::endl;
-    ~~~~
+    ~~~
