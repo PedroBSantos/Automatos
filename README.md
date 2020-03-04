@@ -7,6 +7,8 @@ Implementação de autômato finito deterministico para a disciplina de linguage
   ~~~C++
   Automato automato(4, std::vector<char>{'a', 'b'}, false);
   ~~~
+  
+  O estado inicial por padrão é o 0.
  
  ### Adicionando transições:
   automato.criarTransicao(estado inicial da transicao, estado final da transicao, simbolo).
@@ -16,4 +18,5 @@ Implementação de autômato finito deterministico para a disciplina de linguage
   automato.criarTransicao(0, 1, 'a');
   ~~~
   
+  #### Definindo o estado final do autômato:
   
