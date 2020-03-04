@@ -5,6 +5,8 @@ Implementação de autômato finito deterministico para a disciplina de linguage
 # Criando um autômato:
   Automato automato(quantidade de estados, alfabeto do autômato, é afnd?);
   ~~~C++
-  Automato automato1(4, std::vector<char>{'a', 'b'}, false);
+  Automato automato(4, std::vector<char>{'a', 'b'}, false);
   ~~~
+ 
+ ## Adicionando transições:
 
