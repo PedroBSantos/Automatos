@@ -1,6 +1,6 @@
 # Autômatos
 
-Implementação de autômato finito deterministico para a disciplina de linguagens formais e autômatos.
+  Implementação de autômato finito deterministico para a disciplina de linguagens formais e autômatos.
 
 # Criando um autômato:
   Automato automato(quantidade de estados, alfabeto do autômato, é afnd?);
@@ -19,9 +19,10 @@ Implementação de autômato finito deterministico para a disciplina de linguage
   ~~~
   
   # Definindo o estado final do autômato:
-    automato.definirEstadoFinal(estado).
+   automato.definirEstadoFinal(estado).
     
-    Antes de realizar a definição, é verificado se o valor passado como argumento esta dentro do 
-    intervalo [0, quantidade de estados).
-    
-    automato.definirEstadoFinal(2);
+   Antes de realizar a definição, é verificado se o valor passado como argumento esta dentro do 
+   intervalo [0, quantidade de estados).
+   ~~~C++ 
+   automato.definirEstadoFinal(2);
+   ~~~
