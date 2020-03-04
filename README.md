@@ -1,6 +1,8 @@
 # Autômatos
 
   Implementação de autômato finito deterministico para a disciplina de linguagens formais e autômatos.
+  
+  O método de conversão implementado apenas converte AFND's para AFD. Não é possivel converter AFND-E's para AFD.
 
 # Criando um autômato:
   Automato automato(quantidade de estados, alfabeto do autômato, é afnd?);
