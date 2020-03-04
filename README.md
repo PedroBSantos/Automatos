@@ -9,4 +9,8 @@ Implementação de autômato finito deterministico para a disciplina de linguage
   ~~~
  
  ### Adicionando transições:
-
+  automato.criarTransicao(estado inicial da transicao, estado final da transicao, simbolo).
+  
+  ~~~C++
+  automato.criarTransicao(0, 1, 'a');
+  ~~~
