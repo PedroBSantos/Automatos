@@ -25,5 +25,5 @@ Implementação de autômato finito deterministico para a disciplina de linguage
     intervalo [0, quantidade de estados).
     
     ~~~C++
-    automato.definirEstadoFinal(2);
+      automato.definirEstadoFinal(2);
     ~~~
