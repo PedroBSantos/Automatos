@@ -1,6 +1,8 @@
 #include "../inc/estado.h"
 #include "../inc/transicao.h"
 
+Estado::Estado() {}
+
 Estado::Estado(int numero, bool estadoFinal)
 {
     this->numero = numero;

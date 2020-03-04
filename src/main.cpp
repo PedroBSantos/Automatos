@@ -100,6 +100,7 @@ int main(int argc, char const *argv[])
     std::cout << "\nTestes sobre o Automato 6" << std::endl;
     std::cout << automato6.lerPalavra(palavra) << std::endl;
 
+    //AFND que aceita palavras sobre o alfabeto {a, b} e que possuem substring aa ou bb.
     Automato automato7(4, std::vector<char>{'a', 'b'}, true);
     automato7.criarTransicao(0, 0, 'a');
     automato7.criarTransicao(0, 0, 'b');

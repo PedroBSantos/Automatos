@@ -9,7 +9,6 @@
 #include <memory>
 #include "transicao.h"
 #include "estado.h"
-#include <iostream>
 #include <limits>
 
 class Automato

@@ -1,5 +1,7 @@
 #include "../inc/transicao.h"
 
+Transicao::Transicao() {}
+
 Transicao::Transicao(std::shared_ptr<Estado> proximoEstado, char simbolo)
 {
     this->proximoEstado = proximoEstado;

@@ -11,6 +11,7 @@ private:
     char simbolo;
 
 public:
+    Transicao();
     Transicao(std::shared_ptr<Estado> proximoEstado, char simbolo);
     Transicao(const Transicao &transicao);
     ~Transicao();

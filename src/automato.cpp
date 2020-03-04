@@ -1,7 +1,8 @@
 #include "../inc/automato.h"
 
 /*
-    Inicializa um autômato com uma quantidade de estados passada como parâmetro.
+    Inicializa um autômato com uma quantidade de estados passada como parâmetro, o alfabeto do autômato e se é um afnd.
+    Por padrão, o parâmetro afnd é false.
 */
 Automato::Automato(int qtdEstados, std::vector<char> alfabeto, bool afnd)
 {
@@ -93,7 +94,6 @@ void Automato::afndToAfd()
     std::vector<std::shared_ptr<Estado>> estados;
     std::vector<std::vector<std::shared_ptr<Estado>>> novosEstados;
     novosEstados.push_back(std::vector<std::shared_ptr<Estado>>{this->estados[0]});
-    //bool contemVazio = false;
     fila.push(std::vector<std::shared_ptr<Estado>>{this->estados[0]});
     //Instância do estadoVAzio
     std::shared_ptr<Estado> estadoVazio = this->inicializarEstadoVazio();
@@ -145,7 +145,6 @@ void Automato::afndToAfd()
                         estadosEncontrados.insert(std::make_pair(valorVazio, estadoVazio));
                     }
                 }
-                //Aceita um conjunto de estados maior que 1
                 if (!estadosEncontrados.count(valorVazio) || aux.size() > 1)
                 {
                     std::sort(aux.begin(), aux.end());
@@ -208,12 +207,4 @@ void Automato::afndToAfd()
     }
     this->afnd = false;
     this->estados = estados;
-}
-
-void Automato::printConjunto(std::vector<std::shared_ptr<Estado>> estados)
-{
-    for (int i = 0; i < estados.size(); i++)
-    {
-        std::cout << estados[i]->getNumero() << "\t";
-    }
 }

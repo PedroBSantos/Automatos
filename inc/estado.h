@@ -14,6 +14,7 @@ private:
     std::multimap<char, std::shared_ptr<class Transicao>> transicoes;
 
 public:
+    Estado();
     Estado(int numero, bool estadoFinal);
     Estado(const Estado &estado);
     ~Estado();
