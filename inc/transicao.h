@@ -2,18 +2,19 @@
 #define TRANSICAO_H
 
 #include "estado.h"
+#include <memory>
 
 class Transicao
 {
 private:
-    Estado *proximoEstado;
+    std::shared_ptr<Estado> proximoEstado;
     char simbolo;
 
 public:
-    Transicao(Estado *proximoEstado, char simbolo);
+    Transicao(std::shared_ptr<Estado> proximoEstado, char simbolo);
     Transicao(const Transicao &transicao);
     ~Transicao();
-    Estado *getProximoEstado();
+    std::shared_ptr<Estado> getProximoEstado();
     char getSimbolo();
 };
 

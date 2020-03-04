@@ -14,16 +14,7 @@ Estado::Estado(const Estado &estado)
     this->transicoes = estado.transicoes;
 }
 
-Estado::~Estado()
-{
-    for (int i = 0; i < this->transicoes.size(); i++)
-    {
-        if (this->transicoes[i] != nullptr)
-        {
-            delete this->transicoes[i];
-        }
-    }
-}
+Estado::~Estado() {}
 
 int Estado::getNumero()
 {
@@ -40,7 +31,7 @@ void Estado::setEstadoFinal(bool estadoFinal)
     this->estadoFinal = estadoFinal;
 }
 
-std::vector<Transicao *> &Estado::getTransicoes()
+std::multimap<char, std::shared_ptr<Transicao>> &Estado::getTransicoes()
 {
     return this->transicoes;
 }
