@@ -26,4 +26,3 @@ Implementação de autômato finito deterministico para a disciplina de linguage
     ~~~C++
     automato.definirEstadoFinal(2);
     ~~~
-  
