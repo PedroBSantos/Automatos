@@ -1,7 +1,5 @@
 #include <iostream>
-#include "estado.cpp"
-#include "transicao.cpp"
-#include "automato.cpp"
+#include "../inc/automato.h"
 
 int main(int argc, char const *argv[])
 {
@@ -114,6 +112,32 @@ int main(int argc, char const *argv[])
     palavra = "abababaababb";
     std::cout << "\nTestes sobre o Automato 7" << std::endl;
     std::cout << automato7.lerPalavra(palavra) << std::endl;
+
+    //AFND que aceita palavras sobre o alfabeto {0, 1} e que possuem substring 0101.
+    Automato automato8(5, std::vector<char>{'0', '1'}, true);
+    automato8.criarTransicao(0, 0, '0');
+    automato8.criarTransicao(0, 0, '1');
+    automato8.criarTransicao(0, 1, '0');
+    automato8.criarTransicao(1, 2, '1');
+    automato8.criarTransicao(2, 3, '0');
+    automato8.criarTransicao(3, 4, '1');
+    automato8.criarTransicao(4, 4, '0');
+    automato8.criarTransicao(4, 4, '1');
+    automato8.definirEstadoFinal(4);
+    palavra = "01010";
+    std::cout << "\nTestes sobre o Automato 8" << std::endl;
+    std::cout << automato8.lerPalavra(palavra) << std::endl;
+
+    //AFND que aceita palavras sobre o alfabeto {0, 1} e que terminam com 00.
+    Automato automato9(3, std::vector<char>{'0', '1'}, true);
+    automato9.criarTransicao(0, 0, '0');
+    automato9.criarTransicao(0, 0, '1');
+    automato9.criarTransicao(0, 1, '0');
+    automato9.criarTransicao(1, 2, '0');
+    automato9.definirEstadoFinal(2);
+    palavra = "11100";
+    std::cout << "\nTestes sobre o Automato 9" << std::endl;
+    std::cout << automato9.lerPalavra(palavra) << std::endl;
     system("pause");
     return 0;
 }
