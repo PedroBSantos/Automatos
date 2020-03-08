@@ -31,5 +31,4 @@ public:
         return estado1->numero == estado2->numero;
     }
 };
-
 #endif

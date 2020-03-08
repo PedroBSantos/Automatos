@@ -18,5 +18,4 @@ public:
     std::shared_ptr<Estado> getProximoEstado();
     char getSimbolo();
 };
-
 #endif

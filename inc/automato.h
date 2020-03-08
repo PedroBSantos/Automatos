@@ -20,7 +20,6 @@ private:
     bool afnd;
     void afndToAfd();
     std::shared_ptr<Estado> inicializarEstadoVazio();
-    void printConjunto(std::vector<std::shared_ptr<Estado>> estados);
 
 public:
     Automato(int qtdEstados, std::vector<char> alfabeto, bool afnd = false);
